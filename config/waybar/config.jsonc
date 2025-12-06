@@ -1,0 +1,114 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+
+  "sni": {
+    "auto-launch": false
+  },
+
+  "modules-left": [
+    "custom/theme",
+    "custom/hotkeys",
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "network",
+    "bluetooth",
+    "cpu",
+    "memory",
+    "battery",
+    "tray",
+    "custom/power"
+  ],
+
+  /* THEME SWITCH BUTTON */
+  "custom/theme": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Switch theme",
+    "on-click": "~/.config/waybar/theme-toggle.sh",
+    "interval": 86400
+  },
+
+  /* HOTKEY BUTTON */
+  "custom/hotkeys": {
+    "format": " HotKeyBinds",
+    "tooltip": true,
+    "tooltip-format": "Show hotkeys",
+    "on-click": "kitty -e less ~/.config/waybar/hotkey-hints.txt"
+  },
+
+  /* CLOCK */
+  "clock": {
+    "format": "{:%A %b %d  %I:%M %p}"
+  },
+
+  /* NETWORK */
+  "network": {
+    "format": "{ifname}  {signalStrength}%",
+    "format-ethernet": " {ipaddr}",
+    "format-disconnected": "⚠",
+    "tooltip": true
+  },
+
+  "bluetooth": {
+    "format": "{icon}",
+    "format-connected": "",
+    "format-disabled": "",
+    "format-disconnected": "",
+    "on-click": "blueman-manager"
+  },
+
+
+  /* CPU */
+  "cpu": {
+    "format": "CPU: {usage}%",
+    "tooltip": true
+  },
+
+  /* MEMORY */
+  "memory": {
+    "format": "RAM: {used}G",
+    "tooltip": true
+  },
+
+  /* BATTERY */
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": true
+  },
+
+  /* SYSTEM TRAY */
+  "tray": {
+    "spacing": 8
+  },
+
+  /* POWER BUTTON */
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": true,
+    "tooltip-format": "Power Menu",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh"
+  },
+
+  /* WORKSPACES */
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{id}",
+    "format-active": "{id}",
+    "format-window-separator": "",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": false
+  }
+}
+
+

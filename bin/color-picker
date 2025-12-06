@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+COLOR=$(hyprpicker --autocopy --format hex)
+notify-send "Color picked" "$COLOR"

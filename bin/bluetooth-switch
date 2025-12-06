@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+bluetoothctl devices | rofi -dmenu -i -p "Bluetooth" | awk '{print $2}' | xargs -r bluetoothctl connect

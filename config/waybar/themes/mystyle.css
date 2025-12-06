@@ -1,0 +1,81 @@
+/* ============================================= */
+/* MYSTYLE — CLEAN COMPACT ROUND WAYBAR THEME    */
+/* ============================================= */
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-size: 10px;
+  font-weight: 500;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* BAR */
+window#waybar {
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  margin: 4px 8px;
+  padding: 0 6px;
+}
+
+/* MODULE BUBBLES */
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#network,
+#custom-hotkeys,
+#custom-theme,
+#custom-power,
+.hyprland-workspaces button {
+  background-color: rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 3px 8px;
+  margin: 0 4px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* ACTIVE WORKSPACE */
+.hyprland-workspaces button.active {
+  background-color: rgba(255,255,255,0.22);
+  border-color: rgba(255,255,255,0.25);
+}
+
+/* HOVER */
+#clock:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#network:hover,
+#custom-hotkeys:hover,
+#custom-theme:hover,
+#custom-power:hover,
+.hyprland-workspaces button:hover {
+  background-color: rgba(255,255,255,0.20);
+  border-color: rgba(255,255,255,0.20);
+}
+
+/* TRAY CLEANUP */
+#tray > * {
+  padding: 0 !important;
+  margin: 0 2px !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* TRAY ICONS */
+#tray image {
+  background-color: rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 3px 6px;
+  margin: 0 4px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+

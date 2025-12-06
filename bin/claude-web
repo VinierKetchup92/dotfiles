@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://claude.ai/chats --class Claude --new-window

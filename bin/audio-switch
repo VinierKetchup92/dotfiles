@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+device=$(wpctl status | grep "Sink" -A20 | grep -E "ID|Description" | rofi -dmenu -i -p "Audio Output" | awk '{print $1}')
+[[ -z "$device" ]] && exit
+wpctl set-default "$device"
+notify-send "Audio Device" "Switched"

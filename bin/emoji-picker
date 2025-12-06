@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+emoji=$(cat /usr/share/emojis.txt 2>/dev/null | rofi -dmenu -i -p "Emoji")
+[[ -z "$emoji" ]] && exit
+printf "%s" "$emoji" | wl-copy
+notify-send "Emoji copied" "$emoji"

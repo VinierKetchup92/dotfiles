@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+choice=$(printf "GPU Monitor\nColor Picker\nClipboard\nEmoji Picker\nLayout Toggle" | rofi -dmenu -i -p "Tools")
+case "$choice" in
+    "GPU Monitor") gpu-monitor ;;
+    "Color Picker") color-picker ;;
+    "Clipboard") clipboard-history ;;
+    "Emoji Picker") emoji-picker ;;
+    "Layout Toggle") layout-toggle ;;
+esac

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+nmcli device wifi rescan
+sleep 1
+nmcli device wifi list | rofi -dmenu -i -p "Wi-Fi" | awk '{print $1}' | xargs -r nmcli device wifi connect

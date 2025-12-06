@@ -1,0 +1,77 @@
+@import "/home/ketchupbtw/.cache/wallust/current/colors-waybar.css";
+@import "themes/colors.css";
+/* ========== GLOBAL ========== */
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* ========== BAR ========== */
+window#waybar {
+  min-height: 26px;
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  margin: 4px 8px;
+  padding: 0 6px;
+}
+
+/* ========== MODULE BUBBLES ========== */
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#custom-hotkeys,
+#custom-theme,
+#custom-power,
+#network,
+#workspaces button,
+#tray > * {
+  background-color: rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 3px 6px;
+  margin: 0 4px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* HOVER STYLE */
+#clock:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#custom-hotkeys:hover,
+#custom-theme:hover,
+#custom-power:hover,
+#network:hover,
+#workspaces button:hover {
+  background-color: rgba(255,255,255,0.20);
+  border-color: rgba(255,255,255,0.20);
+}
+
+/* ACTIVE WORKSPACE (RED HIGHLIGHT) */
+#workspaces button.active {
+  background-color: rgba(255, 0, 0, 0.35);
+  border: 2px solid rgba(255, 0, 0, 1);
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 6px;
+}
+
+/* TRAY FIX */
+#tray image {
+  background-color: rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 3px 6px;
+  margin: 0 4px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* THEME BUTTON WIDTH */
+#custom-theme {
+  min-width: 22px;
+}
+

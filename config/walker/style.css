@@ -1,0 +1,39 @@
+/* Main Window Container */
+#window {
+    background-color: transparent;
+}
+
+/* The actual box you see */
+.activation {
+    background-color: #1e1e2e; /* Dark Blue-Grey (Catppuccin Base) */
+    color: #cdd6f4;
+    border-radius: 12px;
+    border: 2px solid #cba6f7; /* Purple border */
+    padding: 10px;
+}
+
+/* The Search Input Bar */
+.search {
+    background-color: #313244;
+    border-radius: 8px;
+    padding: 8px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* The List of Results */
+.list {
+    background-color: transparent;
+}
+
+/* Individual Items */
+.item {
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* The Item you have selected */
+.item.active {
+    background-color: #cba6f7; /* Purple Highlight */
+    color: #1e1e2e;
+}

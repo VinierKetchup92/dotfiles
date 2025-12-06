@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+THEME=$(ls /usr/share/themes | rofi -dmenu -i -p "GTK Theme")
+[[ -z "$THEME" ]] && exit
+gsettings set org.gnome.desktop.interface gtk-theme "$THEME"
+notify-send "GTK Theme changed" "$THEME"

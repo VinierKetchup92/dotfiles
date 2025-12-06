@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+hyprctl reload >/dev/null 2>&1
+notify-send "Hyprland" "Config reloaded"

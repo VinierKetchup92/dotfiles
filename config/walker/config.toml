@@ -1,0 +1,30 @@
+[app]
+# "true" makes it close when you lose focus (like macOS Spotlight)
+hide_on_loss_of_focus = true
+
+[ui]
+# Enable icons (requires a Nerd Font installed)
+icons = true
+width = 500
+
+[list]
+# Show the scrollbar?
+show_scrollbar = false
+
+[search]
+# Smart matching
+exact = false
+
+# --- Search Sources ---
+
+[builtins.applications]
+weight = 5
+context_aware = true
+
+[builtins.runner]
+weight = 1
+icon = "utilities-terminal"
+
+[builtins.finder]
+weight = 1
+icon = "folder"

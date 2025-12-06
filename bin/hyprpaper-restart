@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+pkill hyprpaper
+sleep 0.3
+hyprpaper -c ~/.config/hypr/hyprpaper.conf &
+notify-send "Hyprpaper" "Wallpaper service restarted"

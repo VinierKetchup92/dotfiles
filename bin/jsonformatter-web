@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://jsonformatter.curiousconcept.com/ --class JSONFormatter --new-window

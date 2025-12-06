@@ -1,0 +1,73 @@
+[ AI / CHAT ]
+  SUPER+SHIFT+A   • ChatGPT
+  SUPER+A         • Grok
+  SUPER+G         • Gemini
+  SUPER+SHIFT+G   • Google Messages
+  SUPER+R         • Perplexity
+  SUPER+C         • Claude
+
+
+[ COMMUNICATION ]
+  SUPER+SHIFT+9   • WhatsApp
+  SUPER+D         • Discord
+  SUPER+T         • Telegram
+  SUPER+L         • Slack
+  SUPER+F         • Messenger
+
+
+[ MEDIA / ENTERTAINMENT ]
+  SUPER+Y         • YouTube
+  SUPER+SHIFT+Y   • YouTube Music
+  SUPER+Z         • Spotify
+  SUPER+SHIFT+P   • Pandora
+  SUPER+N         • Netflix
+  SUPER+H         • Hulu
+  SUPER+SHIFT+C   • Crunchyroll
+  SUPER+SHIFT+T   • Twitch
+
+
+[ PRODUCTIVITY & TOOLS ]
+  SUPER+SHIFT+X   • Calculator
+  SUPER+K         • Keep
+  SUPER+SHIFT+L   • Calendar
+  SUPER+O         • Docs
+  SUPER+SHIFT+V   • Drive
+  SUPER+U         • Gmail
+
+
+[ SYSTEM UTILITIES ]
+  SUPER+F1        • Nemo
+  SUPER+F2        • Thunar
+  SUPER+F3        • btop
+  SUPER+F4        • htop
+  SUPER+B         • Bluetooth Manager
+  SUPER+X         • Network Manager
+  SUPER+I         • Audio Controls
+  SUPER+period            • Emoji Picker
+  SUPER+SHIFT+period      • Clipboard History
+  SUPER+Tab               • Window Switcher
+  SUPER+SHIFT+F           • File Picker
+  SUPER+ALT+S             • System Tools
+  SUPER+ALT+T             • Theme Hub
+
+
+[ WALLPAPER ]
+  SUPER+W         • Random Wallpaper
+  SUPER+SHIFT+W   • Wallpaper Picker
+
+
+[ DEV WEB APPS ]
+  SUPER+SHIFT+H   • GitHub
+  SUPER+SHIFT+D   • DevDocs
+  SUPER+SHIFT+N   • MDN
+  SUPER+SHIFT+U   • DockerHub
+  SUPER+SHIFT+J   • NPM
+
+
+[ DEV TERMINAL TOOLS ]
+  SUPER+F5        • VSCode
+  SUPER+F6        • Neovim
+  SUPER+F7        • LazyDocker
+  SUPER+F8        • GitUI
+  SUPER+F9        • tmux
+

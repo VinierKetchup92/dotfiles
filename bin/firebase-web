@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://console.firebase.google.com/ --class Firebase --new-window

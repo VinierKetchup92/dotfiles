@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://console.cloud.google.com/ --class GCloud --new-window

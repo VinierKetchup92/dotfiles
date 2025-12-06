@@ -1,0 +1,87 @@
+/* ============================================= */
+/* SUPER COMPACT ROUND BUBBLE WAYBAR THEME       */
+/* ============================================= */
+
+/* GLOBAL STYLE */
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+/* FLOATING TOP BAR */
+window#waybar {
+    min-height: 22px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    margin: 4px 8px;
+    padding: 0 4px;
+}
+
+/* VARIABLES */
+:root {
+    --bubble-radius: 14px;
+}
+
+/* --------------------------------------------- */
+/* ROUND BUBBLE MODULES (SAFE SELECTORS)         */
+/* --------------------------------------------- */
+
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#tray,
+#custom-hotkeys,
+#custom-theme,
+#custom-power,
+.hyprland-workspaces button,
+#network,
+#network.wlan0,
+#network.wl0,
+#network.eth0,
+#network.ethernet {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: var(--bubble-radius);
+    padding: 2px 8px;
+    margin: 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --------------------------------------------- */
+/* ACTIVE WORKSPACE                              */
+/* --------------------------------------------- */
+
+.hyprland-workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* --------------------------------------------- */
+/* HOVER EFFECT                                  */
+/* --------------------------------------------- */
+
+#clock:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#tray:hover,
+#custom-hotkeys:hover,
+#custom-theme:hover,
+#custom-power:hover,
+#network:hover,
+#network.wlan0:hover,
+#network.wl0:hover,
+#network.eth0:hover,
+#network.ethernet:hover,
+.hyprland-workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.20);
+    border-color: rgba(255, 255, 255, 0.20);
+}
+

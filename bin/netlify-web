@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://app.netlify.com/ --class Netlify --new-window

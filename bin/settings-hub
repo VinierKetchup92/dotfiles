@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+choice=$(printf "Display\nBluetooth\nAudio\nNetwork\nPower\nThemes\nHyprland\nWaybar\nWallpaper" | rofi -dmenu -i -p "Settings")
+case "$choice" in
+    Display) wlr-randr ;;
+    Bluetooth) blueman-manager ;;
+    Audio) pavucontrol ;;
+    Network) nm-connection-editor ;;
+    Power) power-menu ;;
+    Themes) theme-hub ;;
+    Hyprland) hyprland-reload ;;
+    Waybar) waybar-restart ;;
+    Wallpaper) wallpaper-picker.sh ;;
+esac

@@ -1,0 +1,135 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+
+  "sni": {
+    "auto-launch": false
+  },
+
+  "modules-left": [
+    "custom/hotkeys",
+    "hyprland/workspaces"
+  ],
+
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "cpu",
+    "memory",
+    "battery",
+    "tray",
+    "custom/power"
+  ],
+
+
+  /* ================================
+     HOTKEY BUTTON (click to open)
+     ================================ */
+  "custom/hotkeys": {
+    "format": " Hotkeys",
+    "tooltip": true,
+    "tooltip-format": "Click to open hotkey list",
+    "on-click": "kitty -e sh -c 'less ~/.config/waybar/hotkey-hints.txt; read -n 1 -s'"
+  },
+
+  /* ================================
+     CLOCK
+     ================================ */
+  "clock": {
+    "format": "{:%A %b %d  %I:%M %p}"
+  },
+
+  /* ================================
+     NETWORK
+     ================================ */
+  "network": {
+    "format": "{ifname}  {signalStrength}%",
+    "format-ethernet": " {ipaddr}",
+    "format-disconnected": "⚠"
+  },
+
+  /* ================================
+     AUDIO
+     ================================ */
+  "pulseaudio": {
+    "format": " {volume}%"
+  },
+
+  /* ================================
+     CPU
+     ================================ */
+  "cpu": {
+    "format": "CPU: {usage}%"
+  },
+
+  /* ================================
+     MEMORY
+     ================================ */
+  "memory": {
+    "format": "RAM: {used}G"
+  },
+
+  /* ================================
+     BATTERY
+     ================================ */
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": true
+  },
+
+  /* ================================
+     POWER MENU BUTTON
+     ================================ */
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": true,
+    "tooltip-format": "Power Menu",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh"
+  },
+
+  /* ================================
+     WORKSPACE MODULE — ICONS ONLY ON ACTIVE
+     ================================ */
+  "hyprland/workspaces": {
+    "format": "{id}",            // inactive workspace shows number
+    "format-active": "{windows}", // active workspace shows icons only
+    "format-window-separator": "",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+
+    "window-rewrite-default": "",
+    "window-rewrite": {
+      "class<kitty>": "",
+      "class<alacritty>": "",
+      "class<foot>": "",
+
+      "class<firefox>": "",
+      "class<chromium>": "",
+      "class<google-chrome>": "",
+
+      "class<code>": "",
+      "class<com.visualstudio.code>": "",
+
+      "class<thunar>": "",
+      "class<org.gnome.Nautilus>": "",
+      "class<org.kde.dolphin>": "",
+
+      "class<discord>": "",
+      "class<Spotify>": "",
+      "class<vlc>": "嗢"
+    },
+
+    "persistent-workspaces": {
+      "*": [1,2,3,4,5,6,7,8,9,10]
+    }
+  }
+}
+

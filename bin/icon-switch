@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+THEME=$(ls /usr/share/icons | rofi -dmenu -i -p "Icon Theme")
+[[ -z "$THEME" ]] && exit
+gsettings set org.gnome.desktop.interface icon-theme "$THEME"
+notify-send "Icons changed" "$THEME"

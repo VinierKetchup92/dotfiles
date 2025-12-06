@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+choice=$(printf "GTK Theme\nCursor Theme\nIcon Theme" | rofi -dmenu -i -p "Themes")
+case "$choice" in
+    "GTK Theme") gtk-theme-switch ;;
+    "Cursor Theme") cursor-switch ;;
+    "Icon Theme") icon-switch ;;
+esac

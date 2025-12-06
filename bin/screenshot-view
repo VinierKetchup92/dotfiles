@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Full-screen screenshot
+FILE="$HOME/Pictures/screenshot-$(date +%s).png"
+grim "$FILE"
+
+# Try to open with an installed viewer
+if command -v imv >/dev/null; then
+    imv "$FILE"
+elif command -v gwenview >/dev/null; then
+    gwenview "$FILE"
+elif command -v feh >/dev/null; then
+    feh "$FILE"
+else
+    notify-send "Screenshot saved" "$FILE"
+fi

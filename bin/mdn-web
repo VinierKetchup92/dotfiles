@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://developer.mozilla.org/ --class MDN --new-window

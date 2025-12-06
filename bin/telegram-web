@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://web.telegram.org/a/ --class Telegram --new-window

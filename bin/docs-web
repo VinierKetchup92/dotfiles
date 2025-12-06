@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://docs.google.com/document/u/0/ --class Docs --new-window

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://hub.docker.com/ --class DockerHub --new-window

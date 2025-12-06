@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ls /usr/share/applications | sed 's/.desktop//' | rofi -dmenu -i -p "Apps" | xargs -I {} gtk-launch {}.desktop

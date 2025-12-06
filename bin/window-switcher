@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+hyprctl clients -j | jq -r '.[] | .title' | rofi -dmenu -i -p "Windows" | xargs -I {} hyprctl dispatch focuswindow title:'{}'

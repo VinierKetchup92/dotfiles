@@ -1,0 +1,27 @@
+* {
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-size: 14px;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    margin: 10px 14px;
+    padding: 4px;
+    border: 1px solid rgba(200, 200, 200, 0.12);
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+#custom-theme, #custom-hotkeys, #workspaces button {
+    background: rgba(80, 80, 80, 0.35);
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+#clock, #network, #pulseaudio, #cpu, #memory, #battery, #tray {
+    padding: 0 12px;
+    margin: 0 6px;
+    background: rgba(80, 80, 80, 0.25);
+    border-radius: 8px;
+}

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+chromium \
+  --app=https://messages.google.com/web \
+  --class Messages \
+  --new-window

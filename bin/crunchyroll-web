@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://www.crunchyroll.com/ --class Crunchyroll --new-window

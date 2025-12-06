@@ -1,0 +1,98 @@
+/* Global */
+* {
+    background: transparent;
+    foreground: #ffffff;
+    border-color: #ff0000;
+}
+
+/* Window container */
+window {
+    padding: 20px;
+    border: 2px;
+    border-color: #ff0000;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+}
+
+/* Search bar wrapper */
+inputbar {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-color: #ffffff;
+    border-radius: 8px;
+    border: 2px;
+    border-color: #ff0000;
+    padding: 6px;
+}
+
+/* Search entry text */
+entry {
+    background-color: rgba(0, 0, 0, 0);
+    text-color: #ffffff;
+    placeholder-color: rgba(200, 200, 200, 0.20);
+}
+
+/* Fix extra white block in some modes */
+prompt {
+    background-color: rgba(0,0,0,0);
+    text-color: #ffffff;
+}
+
+/* Big middle area (launcher list) */
+listview {
+    background-color: rgba(0,0,0,0);
+    text-color: #ffffff;
+    padding: 10px;
+}
+
+/* Items */
+element {
+    padding: 6px;
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+/* Selected item */
+element selected {
+    background-color: rgba(255, 0, 0, 0.35);
+    text-color: #ffffff;
+    border-radius: 6px;
+}
+
+/* Remove any white highlight that sneaks through */
+element-icon,
+element-text,
+textbox {
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+/* Fix the hidden white box in the program list */
+element normal.normal {
+    background-color: rgba(0,0,0,0);
+    text-color: #ffffff;
+}
+
+/* Also fix alternate rows (lbonn uses these) */
+element alternate.normal {
+    background-color: rgba(0,0,0,0);
+    text-color: #ffffff;
+}
+
+/* Remove hidden white background from list container */
+listview {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+}
+
+/* Remove the internal viewport background (THIS is the big white area) */
+listview viewport {
+    background-color: rgba(0,0,0,0);
+}
+
+/* Remove the right-side white patch next to the search bar */
+case-indicator {
+    background-color: rgba(0,0,0,0);
+    text-color: #ffffff;
+    border: 0;
+}
+}

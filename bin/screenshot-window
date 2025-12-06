@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+grim -g "$(slurp -b 00000000)" ~/Pictures/screenshot-$(date +%s).png

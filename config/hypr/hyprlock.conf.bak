@@ -1,0 +1,72 @@
+# ─────────────────────────────────────────────────────────────
+# HYPRLOCK — Modern lockscreen
+# ─────────────────────────────────────────────────────────────
+
+general {
+    hide_cursor = true
+    no_fade_in = false
+}
+
+background {
+    monitor =
+    path = ~/.config/hyprlock/wallpaper.png
+    color = rgba(0, 0, 0, 0.35)
+    blur_size = 8
+    blur_passes = 3
+}
+
+# Password box
+auth {
+    indicator {
+        size = 30
+        border_thickness = 2
+        color = rgba(255, 255, 255, 0.7)
+        color_fail = rgba(255, 0, 0, 0.8)
+        color_idle = rgba(255, 255, 255, 0.5)
+    }
+
+    ring {
+        enabled = true
+        color = rgba(255, 255, 255, 0.6)
+        color_wrong = rgba(255, 0, 0, 0.7)
+    }
+
+    shadow_passes = 3
+}
+
+# Layout for clock + date + password box
+layout {
+    plugin {
+        name = input-field
+        x = 50%
+        y = 52%
+        horizontal_alignment = center
+        size = 300
+        roundness = 12
+        font_color = rgba(255,255,255,0.9)
+        outline_thickness = 1
+    }
+
+    plugin {
+        name = text
+        text = "$TIME"
+        time_format = "%I:%M %p"
+        x = 50%
+        y = 30%
+        font_size = 64
+        color = rgba(255,255,255,0.85)
+        bold = true
+        horizontal_alignment = center
+    }
+
+    plugin {
+        name = text
+        text = "$DATE"
+        time_format = "%A, %B %d"
+        x = 50%
+        y = 38%
+        font_size = 24
+        color = rgba(255,255,255,0.75)
+        horizontal_alignment = center
+    }
+}

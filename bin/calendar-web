@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://calendar.google.com/ --class Calendar --new-window

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+rm -rf ~/.cache/*
+notify-send "Cache cleaned" "All files in ~/.cache removed"

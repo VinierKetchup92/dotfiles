@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+chromium \
+  --app=https://grok.com/ \
+  --class Grok \
+  --new-window
+

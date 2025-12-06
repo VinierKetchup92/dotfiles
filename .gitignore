@@ -1,0 +1,29 @@
+# Never commit secrets or private data
+**/.ssh/
+**/.gnupg/
+**/1Password/
+**/BraveSoftware/
+**/chromium/
+**/google-chrome*/
+**/microsoft-edge-dev/
+**/vivaldi*/
+**/mozilla/
+**/pulse/
+**/ibus/
+**/nautilus/
+**/libreoffice/
+
+# Node / misc caches (future-proofing)
+node_modules/
+dist/
+.env
+
+# Extra secret-ish patterns
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*credentials*
+*secrets*

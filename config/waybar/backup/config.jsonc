@@ -1,0 +1,81 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+
+  "sni": {
+    "auto-launch": false
+  },
+
+  "modules-left": [
+    "custom/theme",
+    "custom/hotkeys",
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "cpu",
+    "memory",
+    "battery",
+    "tray",
+    "custom/power"
+  ],
+
+  "custom/theme": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Switch Theme",
+    "on-click": "~/.config/waybar/theme-toggle.sh",
+    "interval": 86400
+  },
+
+  "custom/hotkeys": {
+    "format": "  Hotkeys",
+    "tooltip": true,
+    "tooltip-format": "{}",
+    "interval": 86400,
+    "exec": "cat ~/.config/waybar/hotkey-hints.txt"
+  },
+
+  "clock": {
+    "format": "{:%A %b %d  %I:%M %p}"
+  },
+
+  "network": {
+    "format": "{ifname}  {signalStrength}%",
+    "format-ethernet": " {ipaddr}",
+    "format-disconnected": "⚠"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%"
+  },
+
+  "cpu": {
+    "format": "CPU: {usage}%"
+  },
+
+  "memory": {
+    "format": "RAM: {used}G"
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": true
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": true,
+    "tooltip-format": "Power Menu",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh"
+  }
+}
+

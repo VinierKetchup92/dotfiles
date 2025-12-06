@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://codepen.io/ --class CodePen --new-window

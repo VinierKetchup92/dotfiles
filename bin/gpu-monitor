@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+watch -n1 "intel_gpu_top -o - | sed -n '1,20p'"

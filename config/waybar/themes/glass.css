@@ -1,0 +1,58 @@
+/* GLASS-LIKE THEME (no blur, just very light) */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background-color: rgba(15, 15, 25, 0.10);
+    border-radius: 16px;
+    border: 1px solid rgba(180, 200, 255, 0.25);
+    margin: 4px 8px;
+    padding: 0 4px;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#battery,
+#tray,
+#custom-hotkeys,
+#custom-theme,
+#custom-power,
+.hyprland-workspaces button {
+    background-color: rgba(40, 60, 100, 0.35);
+    border-radius: 14px;
+    padding: 2px 8px;
+    margin: 0 4px;
+    border: 1px solid rgba(120, 160, 220, 0.60);
+}
+
+.hyprland-workspaces button.active {
+    background-color: rgba(180, 210, 255, 0.60);
+    color: #101020;
+    border: 1px solid rgba(220, 240, 255, 0.90);
+}
+
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#tray:hover,
+#custom-hotkeys:hover,
+#custom-theme:hover,
+#custom-power:hover,
+.hyprland-workspaces button:hover {
+    background-color: rgba(90, 130, 200, 0.70);
+    border-color: rgba(200, 230, 255, 0.90);
+}
+

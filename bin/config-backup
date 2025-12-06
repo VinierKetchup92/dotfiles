@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+BACKUP=~/config-backup-$(date +%Y%m%d-%H%M)
+cp -r ~/.config "$BACKUP"
+notify-send "Backup created" "$BACKUP"

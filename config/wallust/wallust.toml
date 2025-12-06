@@ -1,0 +1,24 @@
+backend = "fast-resize"
+color_space = "lch"
+palette = "dark"
+threshold = 15
+alpha = 255
+
+[wallpaper]
+copy = true
+copy_target = "~/.cache/wallust/current/wallpaper.jpg"
+apply = true
+target = "~/.cache/wallust/current/wallpaper.jpg"
+
+[templates.hyprland]
+template = "/usr/share/wallust/templates/hyprland.conf"
+target = "~/.cache/wallust/current/colors-hyprland.conf"
+
+[templates.kitty]
+template = "/usr/share/wallust/templates/kitty.conf"
+target = "~/.cache/wallust/current/colors-kitty.conf"
+
+[templates.waybar]
+template = "/usr/share/wallust/templates/waybar.css"
+target = "~/.cache/wallust/current/colors-waybar.css"
+

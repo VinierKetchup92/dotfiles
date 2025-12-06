@@ -1,0 +1,10 @@
+configuration {
+    show-icons: true;
+    drun-show-icons: true;
+    run-show-icons: true;
+    icon-theme: "Papirus";
+    modi: "drun,run";
+    font: "JetBrainsMono Nerd Font 12";
+    theme: "~/.config/rofi/config-thumbnail.rasi";
+}
+

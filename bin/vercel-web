@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://vercel.com/dashboard --class Vercel --new-window

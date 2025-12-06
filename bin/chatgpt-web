@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Launch ChatGPT as a "desktop app"-style window
+chromium \
+  --app=https://chatgpt.com \
+  --class ChatGPT \
+  --new-window

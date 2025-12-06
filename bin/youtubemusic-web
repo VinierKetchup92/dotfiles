@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+chromium --app=https://music.youtube.com/ --class YouTubeMusic --new-window
